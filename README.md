@@ -160,7 +160,7 @@ several ingredients, like
 Starbuzz Coffee, charging for each of these extras, they have
 need to integrate them into their control system.
 
-# Design of the problem using the strategy design pattern
+# Design of the problem using the decorator design pattern
 
 ![decorator design pattern](./docResources/designDecorator.png)
 
@@ -329,12 +329,12 @@ public class Test {
 
 ### Execution Example  Decorator
 
-![Execution Example  Strategy](./docResources/executionDecorator.png)
+![Execution Example  decorator](./docResources/executionDecorator.png)
 
 
 # Design Pattern Observer
 
-![strategy design pattern](./docResources/observerDesign.png)
+![observer design pattern](./docResources/observerDesign.png)
 
 # Implementation
 
@@ -464,16 +464,16 @@ public class Test {
     }
 }
 ``` 
-### Execution Example  Strategy
+### Execution Example  Observer
 
-![Execution Example  Strategy](./docResources/executionObserver.png)
+![Execution Example  Observer](./docResources/executionObserver.png)
 
 # Pattern Composite
 ## Application Example
 Example of application for the composite design pattern: (Folders and Files) a folder can consist of several files in this example the file is a terminal element and the folder is a non-terminal element.
-## Design of the problem using the strategy design pattern
+## Design of the problem using the Composite design pattern
 
-![strategy design pattern](./docResources/compositeDesgin.png)
+![composite design pattern](./docResources/compositeDesgin.png)
 
 ## Implementation
 
@@ -547,25 +547,7 @@ public class Folder extends Composant {
     }
 }
 ```
-Then we add several implementations of the Employee Strategy interface so that we can calculate the IGR in different countries
-### MoroccoCalculateIGR
-```java 
- package strategy;
 
-public class MoroccoCalculateIGR implements IEmployeeStrategy{
-    private final float rate1 = 5;
-    private final float rate2 = 20;
-    private final float rate3 = 42;
-    @Override
-    public float calculateIGR(float grossMonthlySalary) {
-        float grossAnnualSalary=grossMonthlySalary*12;
-        if(grossAnnualSalary <= 40000) return grossAnnualSalary*rate1/100;
-        if(grossAnnualSalary > 40000 && grossAnnualSalary <= 120000) return grossAnnualSalary*rate2/100;
-        if(grossAnnualSalary < 120000) return grossAnnualSalary*rate3/100;
-        return  0;
-    }
-}
-```  
 ### Test
 ```java 
 package composite;

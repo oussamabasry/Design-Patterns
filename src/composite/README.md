@@ -1,9 +1,9 @@
 # Pattern Composite 
 ## Example d'application
 Example of application for the composite design pattern: (Folders and Files) a folder can consist of several files in this example the file is a terminal element and the folder is a non-terminal element.
-## Design of the problem using the strategy design pattern
+## Design of the problem using the composite design pattern
 
-![strategy design pattern](../../docResources/compositeDesgin.png)
+![composite design pattern](../../docResources/compositeDesgin.png)
 
 ## Implementation 
 
@@ -77,25 +77,7 @@ public class Folder extends Composant {
     }
 }
 ```
-Then we add several implementations of the Employee Strategy interface so that we can calculate the IGR in different countries
-### MoroccoCalculateIGR
-```java 
- package strategy;
 
-public class MoroccoCalculateIGR implements IEmployeeStrategy{
-    private final float rate1 = 5;
-    private final float rate2 = 20;
-    private final float rate3 = 42;
-    @Override
-    public float calculateIGR(float grossMonthlySalary) {
-        float grossAnnualSalary=grossMonthlySalary*12;
-        if(grossAnnualSalary <= 40000) return grossAnnualSalary*rate1/100;
-        if(grossAnnualSalary > 40000 && grossAnnualSalary <= 120000) return grossAnnualSalary*rate2/100;
-        if(grossAnnualSalary < 120000) return grossAnnualSalary*rate3/100;
-        return  0;
-    }
-}
-```  
 ### Test
 ```java 
 package composite;
@@ -127,4 +109,4 @@ public class Test {
 
 ### Execution Example  Composite
 
-![Execution Example  Strategy](../../docResources/executionComposite.png)
+![Execution Example  composiste](../../docResources/executionComposite.png)

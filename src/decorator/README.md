@@ -1,7 +1,7 @@
 # Problem: Pattern Decorator 
 Starbuzz Coffee has made a name for itself by becoming the largest chain of "coffee shops" in the United States. When they started, they designed their classes like this:
 
-![strategy design pattern](../../docResources/drink.png)
+![decorator design pattern](../../docResources/drink.png)
 
 In addition to your coffee, you can also request
 several ingredients, like
@@ -14,7 +14,7 @@ several ingredients, like
 Starbuzz Coffee, charging for each of these extras, they have
 need to integrate them into their control system.
 
-# Design of the problem using the strategy design pattern
+# Design of the problem using the decorator design pattern
 
 ![decorator design pattern](../../docResources/designDecorator.png)
 
@@ -183,4 +183,4 @@ public class Test {
 
 ### Execution Example  Decorator
 
-![Execution Example  Strategy](../../docResources/executionDecorator.png)
+![Execution Example  Decorator](../../docResources/executionDecorator.png)

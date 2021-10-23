@@ -1,6 +1,6 @@
 # Design Pattern Observer 
 
-![strategy design pattern](../../docResources/observerDesign.png)
+![observer design pattern](../../docResources/observerDesign.png)
 
 # Implementation 
 
@@ -130,6 +130,6 @@ public class Test {
     }
 }
 ``` 
-### Execution Example  Strategy
+### Execution Example  Observer
 
-![Execution Example  Strategy](../../docResources/executionObserver.png)
+![Execution Example  Observer](../../docResources/executionObserver.png)
